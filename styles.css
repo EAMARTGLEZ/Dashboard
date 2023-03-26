@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    background: #e0e0e0;
+    color: #1d1d1d;
+  }
+  .container{
+    box-sizing: border-box;
+  }
+  #app {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 40px auto 100px auto;
+    width: 90%;
+  }
+  
+  #app .pelicula {
+    text-align: center;
+  }
+  
+  #app .pelicula .titulo {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  #app .pelicula .poster {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+  header{
+    display: block;
+    margin: 0px auto;
+    margin-top: 3px;
+  }
+  header .search{
+      display: block;
+      width: 150px;
+  }
+  .logo{
+    display: block;
+    width: 100px;
+  }
+  .paginacion {
+    background: transparent;
+    bottom: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    width: 75%;
+  }
+  .title{
+    color: mediumslateblue;
+    text-shadow: 1px 4px 2px cadetblue;
+  }
+  .paginacion button {
+    align-items: center;
+    background: #241744;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    transition: 0.3s ease all;
+  }
+  
+  .paginacion button:hover {
+    background: #137c32;
+  }
+  img{
+    display: block;
+    margin: auto;
+    padding: 1em 1em 0em;
+    width: 18rem;
+  }
+  .card-title{
+    font-size: .95em;
+    font-weight: 700;
+    text-align: center;
+  }
+  .info{
+    align-items: center;
+    border-radius: 1.175em;
+    display: block;
+    justify-content: center;
+    margin-left: 2.4rem;
+    margin-top: 1em;
+    text-align: center;
+    padding: 1em;
+    }
+  canvas{
+    box-sizing: border-box;
+    display: inline;
+    font-size: 1.275em;
+    height: 40em;
+    margin: 0px auto;
+    margin-left: 14em;
+    width: 40em;
+  }
+  footer{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.145rem;
+    height: 1.275em;
+    padding: 1.275em auto;
+  }
+  @media (max-width: 768px){
+    #app{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: calc(2, 1fr);
+      gap: 10px;
+    } 
+    canvas{
+      box-sizing: border-box;
+      display: inline;
+      font-size: 1.275em;
+      height: 30em;
+      margin: 0px auto;
+      margin-left: 4.2em;
+      width: 30em;
+    }
+  }
+  @media (orientation: portrait){
+    #app{
+      display: flex;
+      flex-direction: column;
+    }
+    .paginacion{
+      margin-top: -2.175em;
+    }
+    .info{
+      margin: 0px auto;
+    }
+    canvas{
+      display: block;
+      height: 25em;
+      margin: 0px auto;
+      margin-top: -5px;
+      width: 25em;
+    }
+    footer{
+      color: #222;
+      font-size: 1.175em;
+      font-weight: 150;
+      margin-bottom: 0.5em;
+    }
+  }
